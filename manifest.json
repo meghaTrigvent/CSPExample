@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Introduce CSP",
+	"description": "CSP is must for prevention from cross-site scripting attack",
+	"version": "1.0.0",
+	"permissions": [],
+	"action": {
+		"default_title": "CSP Protection",
+		"default_popup": "popup.html"
+	},
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; style-src 'self'; img-src 'self'"
+	}
+
+}

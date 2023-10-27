@@ -1,0 +1,15 @@
+html {
+    max-height: 550px;
+    max-width: 800px;
+    width: 350px;
+    padding:20px;
+    overflow: auto; 
+    background: #efe;
+  }
+
+  #img-wrap-text {
+    width: 80px; 
+    height: 80px; 
+    float:left; 
+    margin-right: 10px
+  }

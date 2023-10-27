@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="popup.css" rel="stylesheet"/>
+</head>
+<body class="container">  
+  <div id="accordion" class="mb-5">
+    <h3>CSP Intro</h3>
+    <div>
+      <p>
+        <img id="img-wrap-text" src="https://assets.static-upwork.com/org-logo/1595727637309239296"/>
+        Defining restrictions on the scripts, styles, and other resources an extension can use/load. 
+      </p>
+      <p>
+        In Manifest V3, all of your extension's logic must be part of the extension package. You can no longer load and execute remotely hosted files. 
+      </p>
+      <h4>Examples include:</h4>
+      <p> JavaScript files pulled from the developer's server. </p>
+      <p> Any library hosted on a CDN. </p>
+      <p> Bundled third-party libraries that dynamically fetch remote hosted code. </p>
+    </div>
+    <h3>How to set CSP rules</h3>
+    <div>
+      <p>
+        <ul  class="text-secondary text-justify">
+          <li>Define the <b>content_security_policy key</b> in your <span class="text-info">manifest.json</span> file. </li>
+          <li>Set the CSP rules according to your extension's requirements.</li>
+          <li>Ensure your CSP rules follow a valid CSP syntax, including directives like script-src, style-src, and others.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <script src = "popup.js"></script>
+</body>
+</html>
